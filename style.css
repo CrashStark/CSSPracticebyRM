@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: lightcoral;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+
+.loader div {
+    position: absolute;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 2px 2px 20px #00000020;
+}
+
+.loader div:nth-child(1) {
+    width: 100px;
+    height: 100px;
+    animation: circleAnimation 2s infinite alternate both;
+}
+    .loader div:nth-child(2) {
+        width: 75px;
+        height: 75px;
+        top: 12.5px;
+        left: 15px;
+        animation: circleAnimation 2s infinite alternate both;
+    }
+
+    .loader div:nth-child(3) {
+        width: 40px;
+        height: 40px;
+        top: 30px;
+        left: 30px;
+        animation: circleAnimation 2s infinite alternate both;
+    }
+
+    @keyframes circleAnimation {
+
+        0%,
+        20% {
+            transform: scale(0);
+            box-shadow: 2px 2px 20px #00000020
+        }
+
+        100% {
+            transform: scale(1);
+            box-shadow: 4px 4px 4px #00000030;
+        }
+
+
+    }
+
+    @keyframes circleAnimation2 {
+
+        0%,
+        50% {
+            transform: scale(0);
+            box-shadow: 2px 2px 20px #00000020
+        }
+
+        100% {
+            transform: scale(1);
+            box-shadow: 4px 4px 4px #00000030;
+        }
+    }
+
+    @keyframes circleAnimation3 {
+
+        0%,
+        70% {
+            transform: scale(0);
+            box-shadow: 2px 2px 20px #00000020
+        }
+
+        100% {
+            transform: scale(1);
+            box-shadow: 4px 4px 4px #00000030;
+        }
+    }
+}
