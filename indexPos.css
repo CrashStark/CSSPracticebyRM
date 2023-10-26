@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/* body{
+    position: relative;
+    border: 1px solid black;
+} */
+
+.container{
+    border:1px solid black;
+    height: 400px;
+    width: 50%;
+    margin:50px auto;
+    position: relative;
+    left: 100px;
+    top: 100px;
+}
+
+.imchild{
+    border:1px solid black;
+    height: 50%;
+    width: 50%;
+    position: absolute;
+    right: 25%;
+    top:23%;
+  
+}
+
+.flexProperty{
+    border: 1px solid black;
+    height: 300px;
+    width:500px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+
+.item{
+    border: 1px solid black; 
+    height: 30px;
+    width:50px;
+}
+
+.gridProperty{
+    border: 1px solid black;
+    height: 300px;
+    width:500px;
+    margin: 20px auto;
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+    grid-column-start: 1;
+    gap:40px;
+    /* grid-template-columns: auto auto auto; */
+  
+}
+
+.fitem{
+/* border: 1px solid black; */
+display: grid;
+
+justify-content: space-around;
+align-items: center;
+
+gap: 20px;
+}
+
+.uname, .surname {
+    width: 100px;
+    padding: 10px;
+  }
+
