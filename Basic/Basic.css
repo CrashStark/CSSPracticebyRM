@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background:linear-gradient(135deg,#153677,#4e085f);
+}
+
+.container{
+    border: 1px solid black;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 100px;
+   
+}
+
+.container h2{
+    margin: 20px;
+}
+.super{
+    border: 1px solid black;
+    position: relative;
+}
+
+.login-Container{
+   
+    height: 400px;
+    width: 50%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    position:absolute;
+    right: 0;
+    top:200px;
+}
+
+input{
+    height: 40px;
+    width: 80%;
+    border-radius: 10px;
+   opacity: 0.5;
+   margin: 20px;
+   font-size: 20px;
+}
+.form-class{
+   
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    top:50%;
+    /* min-width: 540px; */
+    
+
+
+}
+.form-class label{
+font-size: 3vh;
+margin: 10px;   
+color: white; 
+
+}
+.add{
+    font-size: 4vh;
+     margin: 30px;
+    opacity: 0.5;
+    width: 10vw;
+    position:absolute;
+    right: 0px;
+    min-width: 10vw;
+   bottom: 0px;
+   border: none;
+   border-radius: 10px;
+   
+   cursor: pointer;
+
+}
+.add:hover{
+    bottom: 2px;
+    right: 2px;
+    box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.4);
+}
+.form-Handler{
+    border: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    height: 300px;
+    width: 100%;
+     box-shadow: 5px 5px 5px 5px rgba(255, 255, 255, 0.184);;
+}
