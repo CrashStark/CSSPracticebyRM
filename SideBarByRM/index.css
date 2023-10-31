@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar{
+    background: #042331;
+    height: 100%;
+    width: 40vh;
+    position: relative;
+   
+   
+
+}
+.sidebar h1{
+    text-align: center;
+    color:white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid black;
+    color:white;
+    font-size: 3vh;
+}
+.sidebar-ul{
+    margin-left: 30px;
+    list-style-type: none;
+    line-height: 10vh;
+    
+}
+
+button{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border: none;
+    height: 30px;
+    width: 70px;
+    border-radius: 5px;
+    font-family: verdana;
+}
