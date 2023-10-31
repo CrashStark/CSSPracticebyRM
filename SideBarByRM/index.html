@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,23 +8,35 @@
     <title>My Webpage</title>
     <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
     <div class="sidebar">
-    <header class="sidebar-header">
-        <h1>Sidebar</h1>
-        <button>Close</button>
-        <nav>
-            <ul class="sidebar-ul">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Post</a></li>
-                <li><a href="#">News</a></li>
-                <li><a href="#">Rules</a></li>
-                <li><a href="#">System</a></li>
-            </ul>
-        </nav>
-    </header>
-</div>
+        <header class="sidebar-header">
+            <h1>Sidebar</h1>
+            <button id="close">Close</button>
+            <nav>
+                <ul class="sidebar-ul">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Post</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Rules</a></li>
+                    <li><a href="#">System</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const close = document.getElementById("close");
+            const sidebar = document.querySelector('.sidebar');
+            close.addEventListener('click', () => {
+                sidebar.classList.add("close");
+            });
+
+        });
+    </script>
 </body>
+
 </html>
